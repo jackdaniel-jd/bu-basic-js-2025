@@ -46,7 +46,24 @@
 
 
     <h3>Your solution for assignment</h3>
+    <input type="text" id="todo" placeholder="Todo">
+    <input id="addButton" type="button" value="Add" onclick="add()">
+    <input id="resetInputButton" type="button" value="Reset Input" onclick="resetInputs()">
+    <ul id="todoList"></ul>
 
 </body>
+<script>
+      function resetInputs(){
+          document.getElementById('todo').value = '';
+        }
 
+      function add(){
+          let todo = document.getElementById('todo').value = '';
+          let todoList = document.getElementById('todoList');
+          
+        }
+      function clearAll(){
+          document.getElementById('todoList').innerHTML = '';
+        }
+    </script>
 </html>
